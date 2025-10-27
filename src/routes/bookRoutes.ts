@@ -3,13 +3,11 @@ import { authors } from "./authorRoutes";
 
 const router = express.Router();
 
-// In-memory books
 export let books = [
   { id: 1, title: "Harry Potter", year: 1997, authorId: 1 },
   { id: 2, title: "Things Fall Apart", year: 1958, authorId: 2 },
 ];
 
-// GET all books
 router.get("/", (req: Request, res: Response) => {
   res.json(books);
 });
