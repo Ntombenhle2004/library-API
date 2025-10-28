@@ -12,7 +12,6 @@ router.get("/", (req: Request, res: Response) => {
   res.json(books);
 });
 
-// GET book by ID
 router.get("/:id", (req: Request, res: Response) => {
   const id = parseInt(req.params.id);
   const book = books.find((b) => b.id === id);
@@ -20,7 +19,6 @@ router.get("/:id", (req: Request, res: Response) => {
   res.json(book);
 });
 
-// CREATE new book
 router.post("/", (req: Request, res: Response) => {
   const { title, year, authorId } = req.body;
 
@@ -41,7 +39,6 @@ router.post("/", (req: Request, res: Response) => {
   res.status(201).json(newBook);
 });
 
-// UPDATE book
 router.put("/:id", (req: Request, res: Response) => {
   const id = parseInt(req.params.id);
   const book = books.find((b) => b.id === id);
@@ -61,7 +58,6 @@ router.put("/:id", (req: Request, res: Response) => {
   res.json(book);
 });
 
-// DELETE book
 router.delete("/:id", (req: Request, res: Response) => {
   const id = parseInt(req.params.id);
   books = books.filter((b) => b.id !== id);
