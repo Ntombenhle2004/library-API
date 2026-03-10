@@ -26,30 +26,6 @@ npm start
 The API will start at:
 http://localhost:3000
 
-
-
-## Project Structure
-
-library-api/
-│
-├── src/
-│   ├── models/
-│   │   ├── author.ts
-│   │   └── book.ts
-│   ├── routes/
-│   │   ├── authorRoutes.ts
-│   │   └── bookRoutes.ts
-│   ├── middleware/
-│   │   ├── logger.ts
-│   │   └── validation.ts
-│   ├── server.ts
-│
-├── package.json
-├── tsconfig.json
-└── README.md
-
-
-
 ## 📘 API Endpoints
 
 ### 🧍 Authors
