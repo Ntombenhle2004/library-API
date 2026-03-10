@@ -26,7 +26,7 @@ npm start
 The API will start at:
 http://localhost:3000
 
----
+
 
 ## Project Structure
 
@@ -48,7 +48,7 @@ library-api/
 ├── tsconfig.json
 └── README.md
 
----
+
 
 ## 📘 API Endpoints
 
